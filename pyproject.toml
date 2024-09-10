@@ -1,0 +1,145 @@
+[tool.poetry]
+name = "rlboost"
+version = "0.0.0"
+description = "rlboost: outlier filtering using reinforcement learning and attention mechanisms"
+authors = ["Eloy Anguiano Batanero"]
+readme = "README.md"
+homepage = "https://github.com/iiconocimiento/rlboost"
+repository = "https://github.com/iiconocimiento/rlboost"
+documentation = "https://github.com/iiconocimiento/rlboost"
+
+
+[tool.poetry.dependencies]
+
+python = ">=3.9, <3.12"
+gym = "0.21.0"
+stable-baselines3 = "<=1.1.0"
+scikit-learn = ">= 1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.3.1"
+pytest-cov = "3.0.0"
+coverage = {extras = ["toml"], version ="6.5.0"}
+pytest-ruff = "0.0.5"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov-report", "html:cover",
+    "--cov-report", "term",
+    "--cov-report", "xml",
+    "--cov-config=pyproject.toml",
+    "--cov=aisee",
+    "--durations=20",
+    "--ignore=docs/",
+]
+filterwarnings = []
+
+[tool.coverage.paths]
+source = ["."]
+
+[tool.coverage.report]
+omit = [
+    "**test**.py",
+    "**/docs/***",
+    "**.pyc"
+]
+show_missing = false
+precision = 2
+
+[tool.ruff]
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "N",
+    "D",
+    "UP",
+    "ANN",
+    "S",
+    "B",
+    "A",
+    "COM",
+    "C4",
+    "PIE",
+    "T20",
+    "RET",
+    "SIM",
+    "ARG",
+    "PTH",
+    "ERA",
+    "PD",
+    "PL",
+    "RUF",
+]
+unfixable = ["B007"]
+ignore = [
+    "B006", # Flake8:mutable-argument-default:Do not use mutable data structures for argument defaults
+    "B008", # Flake8:function-call-in-default-argument:Do not perform function call {name} in argument defaults
+    "E501", 
+    "D100", 
+    "D101", # TODO remove
+    "D102", # TODO remove
+    "D103", 
+    "D104", 
+    "PLR0913", 
+    "PLR0915", 
+    "PLR2004", 
+    "S101", 
+    "ANN101"]
+
+src = ["src", "tests"]
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "docs/**",
+]
+
+line-length = 80
+
+target-version = "py39"
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.pep8-naming]
+ignore-names = [
+    "X",
+    "Y", 
+    "X_train",
+    "X_valid",
+    "X_test",
+    ]
+
+[tool.ruff.per-file-ignores]
+"./src/rlboost/env.py" = ["T201"] # Prints are allowed for rendering
+"./src/rlboost/utils.py" = ["T201"] # Prints are allowed for rendering
+"./src/rlboost/policy.py" = [
+    "ANN001", # Missing type annotation for function argument `net_arch`
+    "ANN002", # Missing type for *args
+    "ANN003", # Missing type for **kwargs
+    "ARG002", # Unused method argument: `latent_sde`. SB3 VERSION
+    ]
+[tool.ruff.flake8-annotations]
+ignore-fully-untyped = true
+allow-star-arg-any = true
