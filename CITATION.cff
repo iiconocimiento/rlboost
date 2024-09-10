@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: >-
+  RLBoost: Boosting Supervised Models using Deep
+  Reinforcement Learning
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: 'Eloy '
+    family-names: Anguiano Batanero
+    email: eloy.anguiano@iic.uam.es
+    affiliation: Instituto de Ingeniería del Conocimiento
+    orcid: 'https://orcid.org/0000-0001-8516-5629'
+  - given-names: Ángela
+    family-names: Fernández Pascual
+    email: a.fernandez@uam.es
+    affiliation: Universidad Autónoma de Madrid
+  - given-names: Álvaro
+    family-names: Barbero Jiménez
+    email: alvaro.barbero@iic.uam.es
+    affiliation: Instituto de Ingeniería del Conocimiento
+repository-code: 'https://github.com/iiconocimiento/rlboost'
+license: MIT
+commit: 1.0.0
+version: 1.0.0
+date-released: '2024-09-10'
