@@ -88,3 +88,6 @@ This score is calculated with the default score method of the proposed estimator
 - Only classificaction problems (by now).
 - Validation set has to be very precise.
 
+# Financial support
+
+The authors acknowledge financial support from project PID2022-139856NB-I00 funded by MCIN/ AEI / 10.13039/501100011033 / FEDER UE, the Instituto de Ingeniería del Conocimiento (IIC), and the project IA4TES - Inteligencia Artificial para la Transición Energética Sostenible funded by Ministry of Economic Affairs and Digital Transformation (MIA.2021.M04.0008).
