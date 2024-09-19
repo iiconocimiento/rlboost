@@ -1,4 +1,7 @@
 # RLBoost
+
+![RLBoost](./images/icon.png)
+
 Data quality or data evaluation is sometimes a task as important as collecting a large volume of data when it comes to generating accurate artificial intelligence models. In fact, being able to evaluate the data can lead to a larger database that is better suited to a particular problem because we have the ability to filter out data obtained automatically of dubious quality.
 
 RLBoost is an algorithm that uses deep reinforcement learning strategies to evaluate a particular dataset and obtain a model capable of estimating the quality of any new data in order to improve the final predictive quality of a supervised learning model. This solution has the advantage that of being agnostic regarding the supervised model used and, through multi-attention strategies, takes into account the data in its context and not only individually.
