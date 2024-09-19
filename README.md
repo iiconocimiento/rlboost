@@ -1,6 +1,6 @@
 # RLBoost
 
-![RLBoost](./images/icon.png)
+![Icon](./images/icon.png)
 
 Data quality or data evaluation is sometimes a task as important as collecting a large volume of data when it comes to generating accurate artificial intelligence models. In fact, being able to evaluate the data can lead to a larger database that is better suited to a particular problem because we have the ability to filter out data obtained automatically of dubious quality.
 
