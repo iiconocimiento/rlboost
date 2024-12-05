@@ -94,3 +94,21 @@ This score is calculated with the default score method of the proposed estimator
 # Financial support
 
 The authors acknowledge financial support from project PID2022-139856NB-I00 funded by MCIN/ AEI / 10.13039/501100011033 / FEDER UE, the Instituto de Ingeniería del Conocimiento (IIC), and the project IA4TES - Inteligencia Artificial para la Transición Energética Sostenible funded by Ministry of Economic Affairs and Digital Transformation (MIA.2021.M04.0008).
+
+# Citation
+
+```
+@article{BATANERO2025128815,
+title = {RLBoost: Boosting supervised models using deep reinforcement learning},
+journal = {Neurocomputing},
+volume = {618},
+pages = {128815},
+year = {2025},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2024.128815},
+url = {https://www.sciencedirect.com/science/article/pii/S0925231224015868},
+author = {Eloy Anguiano Batanero and Ángela Fernández Pascual and Álvaro Barbero Jiménez},
+keywords = {Data quality, Data valuation, Deep learning, Reinforcement learning, Supervised learning, Multi-attention},
+abstract = {Data quality or evaluation can sometimes be a task as important as collecting a large volume of data when it comes to generating accurate artificial intelligence models. Being able to evaluate the data can lead to a larger database that is better suited to a particular problem because we have the ability to filter out data of dubious quality obtained automatically. In this paper, we present RLBoost (Anguiano et al., 2024) [1], an algorithm that uses deep reinforcement learning strategies to evaluate a particular dataset and obtain a model capable of estimating the quality of any new data in order to improve the final predictive quality of a supervised learning model. This solution has the advantage of being agnostic regarding the supervised model used and, through multi-attention strategies, takes into account the data in its context and not only individually. The results of the article show that this model obtains better and more stable results than other state-of-the-art algorithms such as Leave One Out, Shapley or Data Valuation using Reinforcement Learning.}
+}
+```
